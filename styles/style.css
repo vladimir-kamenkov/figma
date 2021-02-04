@@ -1,0 +1,89 @@
+@import './reset.css';
+
+body, .wrapper {
+    height: 100%;
+}
+
+.wrapper {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container-layout {
+    background-color: #290000;
+    padding: 2.25% 10%;
+    color: #fff;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../img/bg-header-row.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo {
+    flex: 1 1 34.9%;
+}
+
+.nav-list {
+    flex: 1 1 65.1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list-item {
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    padding: 2.25% 3.25%;
+    cursor: pointer;
+}
+
+.nav-list-item:hover {
+    background-color: #76c38f;
+    border-radius: 10px;
+}
+
+.logo-header {
+    font-size: 1.75rem;
+}
+
+.logo-text {
+    font-size: 0.6875rem;
+}
+
+/* HEADER */
+
+/* SLIDER */
+.slide {
+    width: 100%;
+    position: relative;
+}
+
+.slide::before, .slide::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 30px;
+}
+
+.slide::before {
+    left: 0;
+    background-image: url('../img/left-arrow.png');
+}
+
+.slide::after {
+    right: 0;
+    background-image: url('../img/right-arrow.png');
+}
+
+.slide-content {
+    padding: 0 3.75% 2.25%;
+}
+
+/* SLIDER */
